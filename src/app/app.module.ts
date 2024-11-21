@@ -7,19 +7,23 @@ import { ListaEmpleadosComponent } from './lista-empleados/lista-empleados.compo
 import { RegistrarEmpleadoComponent } from './registrar-empleado/registrar-empleado.component';
 import { FormsModule } from '@angular/forms';
 import { ActualizarEmpleadoComponent } from './actualizar-empleado/actualizar-empleado.component';
+import { NavmenuComponent } from './navmenu/navmenu.component';
+import { AtualizarEmpleadoComponent } from './atualizar-empleado/atualizar-empleado.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaEmpleadosComponent,
     RegistrarEmpleadoComponent,
-    ActualizarEmpleadoComponent
+    NavmenuComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

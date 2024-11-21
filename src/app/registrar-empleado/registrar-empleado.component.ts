@@ -19,7 +19,7 @@ export class RegistrarEmpleadoComponent implements OnInit {
     this.empleadoServicio.registrarEmpleado(this.empleado).subscribe(dato =>{
       console.log(dato);
       this.irALaListaDeEmpleados();
-    }, error =>console.log(error) )
+    }, error =>console.log(error))
   }
   irALaListaDeEmpleados(){
     this.router.navigate(["/empleados"])
@@ -27,6 +27,7 @@ export class RegistrarEmpleadoComponent implements OnInit {
 
 
   onSubmit(){
+    this.guardarEmpleado()
     console.log(this.empleado);
   }
 

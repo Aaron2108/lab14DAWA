@@ -22,7 +22,7 @@ export class EmpleadoService {
     return this.httpClient.post<Empleado>(`${this.baseUrl}`, empleado); // Cambié Object por Empleado
   }
 
-  actualizar(id: number, empleado: Empleado): Observable<Empleado> {
+  actualizarEmpleado(id: number, empleado: Empleado): Observable<Empleado> {
     return this.httpClient.put<Empleado>(`${this.baseUrl}/${id}`, empleado); // Cambié Object por Empleado
   }
 
